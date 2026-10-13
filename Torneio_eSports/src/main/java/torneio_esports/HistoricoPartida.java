@@ -14,8 +14,8 @@ public class HistoricoPartida {
     
     // fazer os métodos
     
-    // método para o nome de um time
-    public static int acharPartidas(Partida []partidas, Time time){
+    // método para achar todas as partidas peloo nome de um time 
+    public static int acharPartidas(Partida []partidas, Partida time){
                 for(int i = 0;i<partidas.length;i++){
             if(partidas[i].equals(time)){
                 return i;
@@ -23,5 +23,11 @@ public class HistoricoPartida {
         }
         return -1;
     }
+    
+    // método para verificar se há espaço no vetor para adicionar uma nova partida
+    public boolean possuiEspaco(int quantJogos){
+         return quantJogos < partidas.length;
+    }
+    
     
 }
