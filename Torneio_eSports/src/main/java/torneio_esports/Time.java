@@ -26,6 +26,13 @@ public class Time {
         return derrotas;
     }
     
+    public void setPontuacaoTotal(int valor){
+        if(valor == 3){
+            pontuacaoTotal +=3;
+        }else{
+            pontuacaoTotal +=0;
+        }
+    }
     public int getPontuacaoTotal(){
         return pontuacaoTotal;
     }
