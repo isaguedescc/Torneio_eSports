@@ -13,4 +13,15 @@ public class HistoricoPartida {
     private int quantJogos;
     
     // fazer os métodos
+    
+    // método para o nome de um time
+    public static int acharPartidas(Partida []partidas, Time time){
+                for(int i = 0;i<partidas.length;i++){
+            if(partidas[i].equals(time)){
+                return i;
+            }
+        }
+        return -1;
+    }
+    
 }
