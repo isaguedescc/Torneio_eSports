@@ -17,31 +17,28 @@ public class TabelaTorneio {
     }
 
     // para organizar os times em ordem decrescente baseando na pontuação
-    /*public []int ordenarTimes(Time []times){
+public static void ordenarTimes(Time [] times){
         int n = times.length;
+        boolean trocou;
         
-        for (int i =0; i<n-1; i++){
-            int max_idx = i;
-            
-            for(int j = i+1; j<n; j++){
-                if(times[j].getPontuacaoTotal()>times[max_idx].getPontuacaoTotal()){
-                    max_idx = j;
-            }else if(times[j].getPontuacaoTotal() == times[max_idx].getPontuacaoTotal()){
-                    if(times[j].getVitorias()>times[max_idx].getVitorias()){
-                        max_idx = j;
-                    }else{
-                       j = max_idx; 
+        do{
+            trocou = false;
+            for(int i = 0; i< n-1; i++){
+                if(times[i].getPontuacaoTotal()<times[i+1].getPontuacaoTotal()){
+                  Time temp = times[i];
+                  times[i] = times[i+1];
+                  times[i+1] = temp;
+                   trocou = true;
+                }
             }
-            }
-                Time temp = times[max_idx];
-                times[max_idx]= times[i];
-                times[i] = temp;
-            }
-            
+            n--;
+        }while(trocou);
+           
+        for (Time time : times) {
+            System.out.println(time);
         }
-        
-        return -1;
-  }
-*/    
     }
+
+}
+       
 

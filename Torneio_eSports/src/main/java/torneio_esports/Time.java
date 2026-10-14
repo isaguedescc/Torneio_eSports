@@ -44,9 +44,14 @@ public class Time {
     public void atualizaDerrotas(){
         derrotas ++;
     }
+
+    @Override
+    public String toString() {
+        return "Time: " +  nomeEquipe + ", Pontuação=" + pontuacaoTotal + '.';
+    }
     
     
-    
+
     
 }
  
