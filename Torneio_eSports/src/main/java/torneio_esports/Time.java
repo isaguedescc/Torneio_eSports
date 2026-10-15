@@ -10,10 +10,8 @@ public class Time {
     private int derrotas;
     private int pontuacaoTotal;
  
-   public Time(String nomeEquipe, int vitorias, int derrotas){
+   public Time(String nomeEquipe){
         this.nomeEquipe = nomeEquipe;
-        this.vitorias = vitorias;
-        this.derrotas = derrotas;
     }
     
     public String getNomeEquipe(){
