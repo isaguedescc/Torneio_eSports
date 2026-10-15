@@ -83,26 +83,26 @@ public static String pesquisaBinaria(Time[] times, String nomeTime) {
     	Scanner leitor = new Scanner(System.in);
     	
     	Time times[] = new Time[20];
-    	times[0] = new Time("Flamengo", 1, 1);
-    	times[1] = new Time("Corinthians", 1, 1);
-    	times[2] = new Time("Palmeiras", 1, 1);
-    	times[3] = new Time("Vasco", 1, 1);
-    	times[4] = new Time("Botafogo", 1, 1);
-    	times[5] = new Time("Fluminense",1, 1);
-    	times[6] = new Time("Gremio", 1, 1);
-    	times[7] = new Time("Sao Paulo", 1, 1);
-    	times[8] = new Time("Atletico Mineiro", 1, 1);
-    	times[9] = new Time("Bahia", 1, 1);
-    	times[10] = new Time("Fortaleza", 1, 1);
-    	times[11] = new Time("Vila Nova", 1, 1);
-    	times[12] = new Time("Ponte Preta", 1, 1);
-    	times[13] = new Time("Tourão", 1, 1);
-    	times[14] = new Time("Atletico Goianense", 1, 1);
-    	times[15] = new Time("Vitoria", 1, 1);
-    	times[16] = new Time("Boca Juniors",1, 1);
-    	times[17] = new Time("Santos", 1, 1);
-    	times[18] = new Time("Mirassol", 1, 1);
-    	times[19] = new Time("Sport Clube", 1, 1);
+    	times[0] = new Time("Flamengo");
+    	times[1] = new Time("Corinthians");
+    	times[2] = new Time("Palmeiras");
+    	times[3] = new Time("Vasco");
+    	times[4] = new Time("Botafogo");
+    	times[5] = new Time("Fluminense");
+    	times[6] = new Time("Gremio");
+    	times[7] = new Time("Sao Paulo");
+    	times[8] = new Time("Atletico Mineiro");
+    	times[9] = new Time("Bahia");
+    	times[10] = new Time("Fortaleza");
+    	times[11] = new Time("Vila Nova");
+    	times[12] = new Time("Ponte Preta");
+    	times[13] = new Time("Tourão");
+    	times[14] = new Time("Atletico Goianense");
+    	times[15] = new Time("Vitoria");
+    	times[16] = new Time("Boca Juniors");
+    	times[17] = new Time("Santos");
+    	times[18] = new Time("Mirassol");
+    	times[19] = new Time("Sport Clube");
     	
     	ordemAlfabetica(times);
     	
