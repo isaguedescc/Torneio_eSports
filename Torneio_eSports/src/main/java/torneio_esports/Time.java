@@ -10,8 +10,10 @@ public class Time {
     private int derrotas;
     private int pontuacaoTotal;
  
-    public Time(String nomeEquipe){
+   public Time(String nomeEquipe, int vitorias, int derrotas){
         this.nomeEquipe = nomeEquipe;
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
     }
     
     public String getNomeEquipe(){
@@ -47,11 +49,8 @@ public class Time {
 
     @Override
     public String toString() {
-        return "Time: " +  nomeEquipe + ", Pontuação=" + pontuacaoTotal + '.';
+        return "Time:" +  nomeEquipe + "\n" + "Pontuação: " + pontuacaoTotal;
     }
-    
-    
-
     
 }
  
