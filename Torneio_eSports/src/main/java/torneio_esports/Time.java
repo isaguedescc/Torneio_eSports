@@ -26,13 +26,10 @@ public class Time {
         return derrotas;
     }
     
-    public void setPontuacaoTotal(int valor){
-        if(valor == 3){
-            pontuacaoTotal +=3;
-        }else{
-            pontuacaoTotal +=0;
-        }
+    public void setPontuacaoTotal(int pontuacaoTotal){
+       this.pontuacaoTotal = pontuacaoTotal;
     }
+    
     public int getPontuacaoTotal(){
         return pontuacaoTotal;
     }
