@@ -35,7 +35,7 @@ public class Partida {
             }	        
 	    }
     // método que contabiliza a pontuação total 
-   public void addPontos(){
+    public void addPontos(){
 	    	if(placarA> placarB){
 	            timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+3);
 	            timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+0);
@@ -43,7 +43,7 @@ public class Partida {
 	        }
 	        else if(placarB> placarA) {
 	        	timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+3);
-	            timeA.setPontuacaoTotal(timeB.getPontuacaoTotal()+0);
+	            timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+0);
 	            
 	        }
 	        else {
