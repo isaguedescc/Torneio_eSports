@@ -30,6 +30,14 @@ public static void ordenarTimes(Time [] times){
                   times[i+1] = temp;
                    trocou = true;
                 }
+
+                else if(times[i].getPontuacaoTotal()==times[i+1].getPontuacaoTotal()) {
+                   if(times[i].getVitorias()<times[i+1].getVitorias()) {
+                		Time temp = times[i];
+                        times[i] = times[i+1];
+                        times[i+1] = temp;
+                         trocou = true;
+                	}
             }
             n--;
         }while(trocou);
