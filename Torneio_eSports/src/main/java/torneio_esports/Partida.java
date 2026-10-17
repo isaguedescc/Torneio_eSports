@@ -23,15 +23,17 @@ public class Partida {
   
     // método para atualizar a quantidade de vitórias os derrotas e pontuar os times
     public void pontuaTimes(){
-        if(placarA > placarB){
-            timeA.atualizaVitorias();
-            timeB.atualizaDerrotas();
-        }else{
-            timeB.atualizaVitorias();
-            timeA.atualizaDerrotas();
-        }
-        
-    }
+	        if(placarA > placarB){
+	            timeA.atualizaVitorias();
+	            timeB.atualizaDerrotas();
+	        }else if(placarB>placarA){
+	            timeB.atualizaVitorias();
+	            timeA.atualizaDerrotas();
+	        }
+	        else {
+	        	
+            }	        
+	    }
     // método que contabiliza a pontuação total 
     public void addPontos(){
         if(placarA> placarB){
