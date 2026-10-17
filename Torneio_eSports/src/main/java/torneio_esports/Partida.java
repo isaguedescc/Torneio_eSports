@@ -35,14 +35,21 @@ public class Partida {
             }	        
 	    }
     // método que contabiliza a pontuação total 
-    public void addPontos(){
-        if(placarA> placarB){
-            timeA.setPontuacaoTotal(3);
-            timeB.setPontuacaoTotal(0);
-        }else{
-            timeB.setPontuacaoTotal(3);
-            timeA.setPontuacaoTotal(0);
-        }
-    }
+   public void addPontos(){
+	    	if(placarA> placarB){
+	            timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+3);
+	            timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+0);
+	            
+	        }
+	        else if(placarB> placarA) {
+	        	timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+3);
+	            timeA.setPontuacaoTotal(timeB.getPontuacaoTotal()+0);
+	            
+	        }
+	        else {
+	        	timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+1);
+	        	timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+1);
+	        }
+	    }
     
 }
