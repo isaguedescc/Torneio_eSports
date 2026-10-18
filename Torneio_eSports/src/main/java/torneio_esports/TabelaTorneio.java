@@ -88,41 +88,6 @@ public static void ordenarTimes(Time [] times){
 
         return "Time não encontrado";
     }
-    
-    public static void main(String [] args) {
-    	Scanner leitor = new Scanner(System.in);
-    	
-    	Time times[] = new Time[20];
-    	times[0] = new Time("Flamengo");
-    	times[1] = new Time("Corinthians");
-    	times[2] = new Time("Palmeiras");
-    	times[3] = new Time("Vasco");
-    	times[4] = new Time("Botafogo");
-    	times[5] = new Time("Fluminense");
-    	times[6] = new Time("Gremio");
-    	times[7] = new Time("Sao Paulo");
-    	times[8] = new Time("Atletico Mineiro");
-    	times[9] = new Time("Bahia");
-    	times[10] = new Time("Fortaleza");
-    	times[11] = new Time("Vila Nova");
-    	times[12] = new Time("Ponte Preta");
-    	times[13] = new Time("Tourão");
-    	times[14] = new Time("Atletico Goianense");
-    	times[15] = new Time("Vitoria");
-    	times[16] = new Time("Boca Juniors");
-    	times[17] = new Time("Santos");
-    	times[18] = new Time("Mirassol");
-    	times[19] = new Time("Sport Clube");
-    	
-    	ordemAlfabetica(times);
-    	
-    	System.out.println("Buscar time:");
-    	String nomeTime = leitor.nextLine();
-    	
-    	String resultado = buscaTime(times, nomeTime);
-    	
-    	System.out.println(resultado);
-
-    }
+}
         
 }
