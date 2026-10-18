@@ -18,14 +18,14 @@ public class TabelaTorneio {
 
     // para organizar os times em ordem decrescente baseando na pontuação
 public static void ordenarTimes(Time [] times){
-        int n = times.length;
+       int n = times.length;
         boolean trocou;
         
         do{
             trocou = false;
             for(int i = 0; i< n-1; i++){
                 if(times[i].getPontuacaoTotal()<times[i+1].getPontuacaoTotal()){
-                  Time temp = times[i];
+                	Time temp = times[i];
                   times[i] = times[i+1];
                   times[i+1] = temp;
                    trocou = true;
@@ -33,11 +33,13 @@ public static void ordenarTimes(Time [] times){
 
                 else if(times[i].getPontuacaoTotal()==times[i+1].getPontuacaoTotal()) {
                    if(times[i].getVitorias()<times[i+1].getVitorias()) {
-                		Time temp = times[i];
+                	   Time temp = times[i];
                         times[i] = times[i+1];
                         times[i+1] = temp;
                          trocou = true;
                 	}
+                   
+            }
             }
             n--;
         }while(trocou);
@@ -45,7 +47,7 @@ public static void ordenarTimes(Time [] times){
         for (Time time : times) {
             System.out.println(time);
         }
-    }
+        }
     
     public static void ordemAlfabetica(Time[] times) {
         for (int i = 0; i < times.length - 1; i++) {
