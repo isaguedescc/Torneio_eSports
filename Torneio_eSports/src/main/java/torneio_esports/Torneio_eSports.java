@@ -9,6 +9,7 @@ import java.util.Scanner;
  * @author root
  */
     public class Torneio_eSports {
+        
     public static void main(String [] args) {
     	Scanner leitor = new Scanner(System.in);
  
@@ -300,6 +301,7 @@ import java.util.Scanner;
                 case 9: { // busca binária
                     System.out.print("Nome do time: ");
                     String nome = leitor.nextLine();
+                    System.out.println("----------------------------");
                     TabelaTorneio.ordemAlfabetica(times);
                     System.out.println(TabelaTorneio.buscaTime(times, nome));
                     break;
@@ -335,11 +337,11 @@ import java.util.Scanner;
                 }
  
                 case 0:
-                    System.out.println("Encerrando");
+                    System.out.println("Encerrando...");
                     break;
  
                 default:
-                    System.out.println("Opção invalida");
+                    System.out.println("Opção inválida");
             }
         } while (op != 0);
     }

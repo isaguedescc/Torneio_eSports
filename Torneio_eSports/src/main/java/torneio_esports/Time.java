@@ -44,7 +44,8 @@ public class Time {
 
     @Override
     public String toString() {
-        return "Time:" +  nomeEquipe + "\n" + "Pontuação: " + pontuacaoTotal;
+        return "Time:" +  nomeEquipe + "\n" + "Pontuação: " + pontuacaoTotal + 
+                "\n" +"Vitória(s): "+ vitorias +"\n"+"Derrota(s): "+derrotas;
     }
     
 }
