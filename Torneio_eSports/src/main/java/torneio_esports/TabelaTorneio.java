@@ -117,7 +117,7 @@ public static void ordenarTimes(Time [] times){
     	ordemAlfabetica(times);
     	
     	System.out.println("Buscar time:");
-    	String nomeTime = leitor.next();
+    	String nomeTime = leitor.nextLine();
     	
     	String resultado = pesquisaBinaria(times, nomeTime);
     	
