@@ -38,15 +38,11 @@ public class Partida {
 	            timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+0);
 	            
 	        }
-	        else if(placarB> placarA) {
+	        else {
 	        	timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+3);
 	            timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+0);
-	            
 	        }
-	        else {
-	        	timeA.setPontuacaoTotal(timeA.getPontuacaoTotal()+1);
-	        	timeB.setPontuacaoTotal(timeB.getPontuacaoTotal()+1);
-	        }
+	        
 	    }
     
 }
