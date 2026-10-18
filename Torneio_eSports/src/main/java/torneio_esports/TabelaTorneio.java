@@ -26,17 +26,17 @@ public static void ordenarTimes(Time [] times){
             for(int i = 0; i< n-1; i++){
                 if(times[i].getPontuacaoTotal()<times[i+1].getPontuacaoTotal()){
                 	Time temp = times[i];
-                  times[i] = times[i+1];
-                  times[i+1] = temp;
-                   trocou = true;
+                    times[i] = times[i+1];
+                    times[i+1] = temp;
+                    trocou = true;
                 }
 
                 else if(times[i].getPontuacaoTotal()==times[i+1].getPontuacaoTotal()) {
                    if(times[i].getVitorias()<times[i+1].getVitorias()) {
-                	   Time temp = times[i];
+                	    Time temp = times[i];
                         times[i] = times[i+1];
                         times[i+1] = temp;
-                         trocou = true;
+                        trocou = true;
                 	}
                    
             }
@@ -44,17 +44,17 @@ public static void ordenarTimes(Time [] times){
             n--;
         }while(trocou);
            
-        for (Time time : times) {
+        for(Time time : times) {
             System.out.println(time);
         }
         }
     
     public static void ordemAlfabetica(Time[] times) {
-        for (int i = 0; i < times.length - 1; i++) {
+        for(int i = 0; i < times.length - 1; i++) {
             int menor = i;
 
-            for (int j = i + 1; j < times.length; j++) {
-                if (times[j].getNomeEquipe().compareToIgnoreCase(
+            for(int j = i + 1; j < times.length; j++) {
+                if(times[j].getNomeEquipe().compareToIgnoreCase(
                         times[menor].getNomeEquipe()) < 0) {
                     menor = j;
                 }
@@ -71,17 +71,17 @@ public static void ordenarTimes(Time [] times){
         int inicio = 0;
         int fim = times.length - 1;
 
-        while (inicio <= fim) {
+        while(inicio <= fim) {
             int meio = inicio + (fim - inicio) / 2;
 
-            if (times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) == 0) {
+            if(times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) == 0) {
                 return times[meio].toString(); 
             }
             
-            if (times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) < 0) {
+            if(times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) < 0) {
                 inicio = meio + 1;
             } 
-            else {
+            else{
                 fim = meio - 1;
             }
         }
