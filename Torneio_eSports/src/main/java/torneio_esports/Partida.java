@@ -14,7 +14,7 @@ public class Partida {
     private int placarA;
     private int placarB;
     
-    public Partida(Time timeA, int placarA, Time timeB, int placarB){
+    public Partida(Time timeA, Time timeB, int placarA, int placarB){
         this.timeA = timeA;
         this.timeB = timeB;
         this.placarA = placarA;
