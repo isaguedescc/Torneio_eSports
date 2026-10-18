@@ -29,10 +29,7 @@ public class Partida {
 	        }else if(placarB>placarA){
 	            timeB.atualizaVitorias();
 	            timeA.atualizaDerrotas();
-	        }
-	        else {
-	        	
-            }	        
+	        }        
 	    }
     // método que contabiliza a pontuação total 
     public void addPontos(){
