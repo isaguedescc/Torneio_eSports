@@ -46,7 +46,26 @@ public static void ordenarTimes(Time [] times){
             System.out.println(time);
         }
     }
-public static String pesquisaBinaria(Time[] times, String nomeTime) {
+    
+    public static void ordemAlfabetica(Time[] times) {
+        for (int i = 0; i < times.length - 1; i++) {
+            int menor = i;
+
+            for (int j = i + 1; j < times.length; j++) {
+                if (times[j].getNomeEquipe().compareToIgnoreCase(
+                        times[menor].getNomeEquipe()) < 0) {
+                    menor = j;
+                }
+            }
+
+            Time temp = times[menor];
+            times[menor] = times[i];
+            times[i] = temp;
+        }
+
+    }
+
+    public static String pesquisaBinaria(Time[] times, String nomeTime) {
         int inicio = 0;
         int fim = times.length - 1;
 
@@ -66,25 +85,6 @@ public static String pesquisaBinaria(Time[] times, String nomeTime) {
         }
 
         return "Time não encontrado";
-    }
-    
-    
-    public static void ordemAlfabetica(Time[] times) {
-        for (int i = 0; i < times.length - 1; i++) {
-            int menor = i;
-
-            for (int j = i + 1; j < times.length; j++) {
-                if (times[j].getNomeEquipe().compareToIgnoreCase(
-                        times[menor].getNomeEquipe()) < 0) {
-                    menor = j;
-                }
-            }
-
-            Time temp = times[menor];
-            times[menor] = times[i];
-            times[i] = temp;
-        }
-
     }
     
     public static void main(String [] args) {
