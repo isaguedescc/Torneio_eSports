@@ -57,8 +57,8 @@ package torneio_esports;
                     Time timeA = null;
                     Time timeB = null;
                     for (int i = 0; i < times.length; i++) {
-                        if (times[i].getNomeEquipe().equalsIgnoreCase(nomeA[j])) a = times[i];
-                        if (times[i].getNomeEquipe().equalsIgnoreCase(nomeB[j])) b = times[i];
+                        if (times[i].getNomeEquipe().equalsIgnoreCase(nomeA[j])) timeA = times[i];
+                        if (times[i].getNomeEquipe().equalsIgnoreCase(nomeB[j])) timeB = times[i];
                     }
                     Partida p = new Partida(timeA, timeB, placarA[j], placarB[j]);
                     p.pontuaTimes();
@@ -300,7 +300,7 @@ package torneio_esports;
                     System.out.print("Nome do time: ");
                     String nome = leitor.nextLine();
                     TabelaTorneio.ordemAlfabetica(times);
-                    System.out.println(TabelaTorneio.pesquisaBinaria(times, nome));
+                    System.out.println(TabelaTorneio.buscaTime(times, nome));
                     break;
                 }
  
