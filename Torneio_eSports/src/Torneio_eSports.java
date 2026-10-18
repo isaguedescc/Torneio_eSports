@@ -54,13 +54,13 @@ package torneio_esports;
                     times[i] = new Time(times[i].getNomeEquipe());
                 }
                 for (int j = 0; j < quantJogos; j++) {
-                    Time a = null;
-                    Time b = null;
+                    Time timeA = null;
+                    Time timeB = null;
                     for (int i = 0; i < times.length; i++) {
                         if (times[i].getNomeEquipe().equalsIgnoreCase(nomeA[j])) a = times[i];
                         if (times[i].getNomeEquipe().equalsIgnoreCase(nomeB[j])) b = times[i];
                     }
-                    Partida p = new Partida(a, b, placarA[j], placarB[j]);
+                    Partida p = new Partida(timeA, timeB, placarA[j], placarB[j]);
                     p.pontuaTimes();
                     p.addPontos();
                 }
