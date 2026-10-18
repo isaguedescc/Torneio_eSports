@@ -67,18 +67,18 @@ public static void ordenarTimes(Time [] times){
 
     }
 
-    public static String buscaTime(Time[] times, String nomeTime) {
+    public static String buscaTime(Time[] times, String nome) {
         int inicio = 0;
         int fim = times.length - 1;
 
         while(inicio <= fim) {
             int meio = inicio + (fim - inicio) / 2;
 
-            if(times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) == 0) {
+            if(times[meio].getNomeEquipe().compareToIgnoreCase(nome) == 0) {
                 return times[meio].toString(); 
             }
             
-            if(times[meio].getNomeEquipe().compareToIgnoreCase(nomeTime) < 0) {
+            if(times[meio].getNomeEquipe().compareToIgnoreCase(nome) < 0) {
                 inicio = meio + 1;
             } 
             else{
