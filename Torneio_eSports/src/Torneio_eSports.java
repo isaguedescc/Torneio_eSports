@@ -133,7 +133,7 @@ public static String pesquisaBinaria(Time[] times, String nomeTime) {
                     }
                     Partida p = new Partida(a, b, placarA[j], placarB[j]);
                     p.pontuaTimes();
-                    p.addPontuacao();
+                    p.addPontos();
                 }
                 precisaAtualizar = false;
             }
