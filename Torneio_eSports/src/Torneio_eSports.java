@@ -7,7 +7,7 @@ package torneio_esports;
  *
  * @author root
  */
-    public class Torneio_eSport {
+    public class Torneio_eSports {
     public static void main(String [] args) {
     	Scanner leitor = new Scanner(System.in);
  
