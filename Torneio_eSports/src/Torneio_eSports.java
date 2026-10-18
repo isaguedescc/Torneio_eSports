@@ -343,6 +343,5 @@ package torneio_esports;
         } while (op != 0);
     }
 
-    }
 }
        
