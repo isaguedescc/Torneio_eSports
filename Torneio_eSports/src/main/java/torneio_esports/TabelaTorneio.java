@@ -67,7 +67,7 @@ public static void ordenarTimes(Time [] times){
 
     }
 
-    public static String pesquisaBinaria(Time[] times, String nomeTime) {
+    public static String buscaTime(Time[] times, String nomeTime) {
         int inicio = 0;
         int fim = times.length - 1;
 
@@ -119,7 +119,7 @@ public static void ordenarTimes(Time [] times){
     	System.out.println("Buscar time:");
     	String nomeTime = leitor.nextLine();
     	
-    	String resultado = pesquisaBinaria(times, nomeTime);
+    	String resultado = buscaTime(times, nomeTime);
     	
     	System.out.println(resultado);
 
